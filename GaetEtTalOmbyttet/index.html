@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid">
+      <h1></h1>
+      <input
+        type="number"
+        id="userGuess"
+        placeholder="Indtast dit gæt"
+        min="0"
+        max="100"
+      />
+      <button onclick="checkGuess()">Gæt!</button>
+      <div>
+        <button class="high">For højt</button>
+        <button class="low">For lavt</button>
+        <button class="right">Du gættede rigtigt</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+<style>
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-items: center;
+  }
+</style>

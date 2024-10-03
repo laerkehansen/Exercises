@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Computeren gætter dit tal</title>
+  </head>
+  <body>
+    <h1>Computeren gætter dit tal</h1>
+    <p id="message">Computeren gætter...</p>
+
+    <!-- Knapper til at give feedback -->
+    <button onclick="giveResponse('højere')">Højere</button>
+    <button onclick="giveResponse('lavere')">Lavere</button>
+    <button onclick="giveResponse('ja')">Rigtigt</button>
+
+    <script>
+      let low = 1; // Laveste mulige værdi
+      let high = 100; // Højeste mulige værdi
+      let attempts = 0; // Tæller antallet af forsøg
+      let guess;
+      let message = document.getElementById("message"); // Element til beskeder
+
+      // Funktion der starter gætningen
+      function guessNumber() {
+        attempts++;
+        guess = Math.floor((low + high) / 2); // Gætter midt i området
+        message.innerHTML = `Er dit tal ${guess}?`; // Opdater beskeden
+      }
+
+      // Funktion der håndterer brugerens svar via knapperne
+      function giveResponse(response) {
+        if (response === "ja") {
+          message.innerHTML = `Computeren gættede dit tal ${guess} på ${attempts} forsøg!`; // Gættet var korrekt
+        } else if (response === "højere") {
+          low = guess + 1; // Juster intervallet for højere gæt
+          guessNumber();
+        } else if (response === "lavere") {
+          high = guess - 1; // Juster intervallet for lavere gæt
+          guessNumber();
+        }
+      }
+
+      // Start første gæt
+      guessNumber();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+header,
+.footer {
+  background-color: red;
+  padding: 2rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: x-large;
+}
+
+p {
+  background-color: hotpink;
+  padding: 4rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+}
