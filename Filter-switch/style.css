@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+:root {
+  --header-bg-color-hawaii: rgba(46, 255, 102, 1);
+  --header-bg-color-light: rgba(242, 235, 194, 1);
+  --header-bg-color-dark: rgba(102, 72, 51, 1);
+
+  --main-bg-color-hawaii: rgba(46, 189, 255, 1);
+  --main-bg-color-light: rgba(242, 235, 194, 1);
+  --main-bg-color-dark: rgba(102, 72, 51, 1);
+
+  --footer-bg-color-hawaii: rgba(255, 46, 144, 1);
+  --footer-bg-color-light: rgba(242, 235, 194, 1);
+  --footer-bg-color-dark: rgba(102, 72, 51, 1);
+}
+
+header,
+main,
+footer {
+  border: solid 1px black;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+body[data-theme="hawaii"] {
+  background-color: yellow;
+  header {
+    background-color: var(--header-bg-color-hawaii);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  main {
+    background-color: var(--main-bg-color-hawaii);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    background-color: var(--footer-bg-color-hawaii);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+body[data-theme="light"] {
+  background-color: lightblue;
+
+  header,
+  main,
+  footer {
+    border: solid 1px darkblue;
+  }
+
+  header {
+    background-color: var(--header-bg-color-light);
+    color: var(--header-bg-color-dark);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  main {
+    background-color: var(--main-bg-color-light);
+    color: var(--main-bg-color-dark);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    background-color: var(--footer-bg-color-light);
+    color: var(--footer-bg-color-dark);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+body[data-theme="dark"] {
+  background-color: darkslateblue;
+
+  header,
+  main,
+  footer {
+    border: solid 1px lightblue;
+  }
+
+  header {
+    background-color: var(--header-bg-color-dark);
+    color: var(--header-bg-color-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  main {
+    background-color: var(--main-bg-color-dark);
+    color: var(--main-bg-color-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  footer {
+    background-color: var(--footer-bg-color-dark);
+    color: var(--footer-bg-color-light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}

@@ -1,0 +1,15 @@
+/* Slippe for den grimme(?) blå focus på knappen  */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+/* centrering */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
