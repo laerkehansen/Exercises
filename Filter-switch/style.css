@@ -30,18 +30,21 @@ body[data-theme="hawaii"] {
   background-color: yellow;
   header {
     background-color: var(--header-bg-color-hawaii);
+    color: deeppink;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   main {
     background-color: var(--main-bg-color-hawaii);
+    color: yellow;
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
   footer {
     background-color: var(--footer-bg-color-hawaii);
+    color: var(--header-bg-color-hawaii);
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
