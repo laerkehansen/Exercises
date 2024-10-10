@@ -52,20 +52,18 @@ const vehicles = [
 ];
 const tbodyPointer = document.querySelector("tbody");
 
+const allElectricArr = vehicles.filter(isVehiclesElectric);
+console.log(allElectricArr);
 
-
-// const allElectricArr = vehicles.filter(isVehiclesElectric);
-// console.log(allElectricArr);
-
-// showTheseVehicles(allElectricArr)
-// // const elec = vehicles.filter();
-// function isVehiclesElectric(vehicle){
-// if (vehicle ===  undefined){
-//   return true;
-// } else {
-//   return false
-// }
-// }
+showTheseVehicles(allElectricArr)
+// const elec = vehicles.filter();
+function isVehiclesElectric(vehicle){
+if (vehicle ===  undefined){
+  return true;
+} else {
+  return false
+}
+}
 
 // Alle elektrisk køretøjer
 // const elec = vehicles.filter();
@@ -99,16 +97,16 @@ const tbodyPointer = document.querySelector("tbody");
 //     }
 
 
-//   Alle rugbrødsdrevne køretøjer hvor der er plads til mere end 1 person
-//     function isVehiclesElectric(vehicle){
-//       if (vehicle.fuel === "Rugbrød" &&
-//         vehicle.passengers > 1 
-//       ){
-//         return true;
-//       } else {
-//         return false
-//       }
-//       }
+  // Alle rugbrødsdrevne køretøjer hvor der er plads til mere end 1 person
+    // function isVehiclesElectric(vehicle){
+    //   if (vehicle.fuel === "Rugbrød" &&
+    //     vehicle.passengers > 1 
+    //   ){
+    //     return true;
+    //   } else {
+    //     return false
+    //   }
+    //   }
 
 
 function showTheseVehicles(arr) {

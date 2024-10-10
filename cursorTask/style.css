@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxcolor {
+  background-color: white;
+  height: 500px;
+  width: 700px;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.3s;
+  border: solid 2px black;
+}

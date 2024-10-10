@@ -1,0 +1,30 @@
+.fill {
+  width: 200px;
+  height: 30px;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 20px;
+  background: linear-gradient(to left, white 50%, darkgrey 50%) right;
+  border: solid 2px black;
+  /* animation-name: fill;
+    animation-duration: 3s; */
+  background-size: 200%;
+  animation: fill 6s;
+}
+
+@keyframes fill {
+  0% {
+    /* left: 0;
+      background-color: blue; */
+    background-position: right;
+  }
+  /* 50% {
+      left: 100%;
+      background-color: aqua;
+    } */
+  100% {
+    /* left: 0;
+      background-color: aquamarine; */
+    background-position: left;
+  }
+}

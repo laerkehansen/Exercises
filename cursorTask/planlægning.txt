@@ -1,0 +1,14 @@
+Pointer Move
+Lav en html side der detekterer musens X-position og opdaterer en CSS custom property der styrer lightness i en HSL color.
+
+Ekstra: Opdater fx Saturation, HSL, med musens Y-position
+
+
+Hints: 
+"mousemove"
+window.innerWidth
+style.setProperty
+clientX
+// procentregning: delen/detHele * 100
+
+
